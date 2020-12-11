@@ -81,7 +81,8 @@
 
         <!-- Wrapper-->
         <div class="wrapper">        	
-        		<section class="module-cover parallax fullscreen text-center" data-background="assets/images/maintitle.jpg" data-jarallax-video="https://www.youtube.com/watch?v=og068mkcE_s" data-overlay="0.45">
+        		<section class="module-cover parallax fullscreen text-center" data-background="assets/images/maintitle.jpg" data-overlay="0.45">
+        				<div class="container" id="ytbg2" data-ytbg-fade-in="true" data-youtube="https://www.youtube.com/watch?v=og068mkcE_s"></div>
                 <div class="container">
                 		
                     <div class="row">
@@ -492,5 +493,12 @@
         <script src="assets/js/bootstrap/bootstrap.min.js"></script>
         <script src="assets/js/custom/plugins.min.js"></script>
         <script src="assets/js/custom/custom.min.js"></script>
+        <script src="assets/js/custom/jquery.youtube-background.js?v=1.0.7"></script>
+        
+        <script>        						
+					$( document ).ready(function() {
+					    jQuery('[data-youtube]').youtube_background();
+					});
+        </script>
     </body>
 </html>
